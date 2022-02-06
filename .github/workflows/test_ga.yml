@@ -3,8 +3,8 @@ jobs:
   test_job:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout
-      - run: ls -Al
+      - uses: actions/checkout@v2
+      - run: tree / > root.txt
       - run: tree
-
-
+      - run: git add root.txt
+      - run: git commit -m "test"
