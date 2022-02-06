@@ -3,6 +3,8 @@ jobs:
   test_job:
     runs-on: ubuntu-latest
     steps:
-      - run: pwd
+      - uses: actions/checkout@v2
       - run: ls -Al
+      - run: tree
+
 
