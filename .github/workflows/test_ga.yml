@@ -3,7 +3,7 @@ jobs:
   test_job:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout
       - run: ls -Al
       - run: tree
 
