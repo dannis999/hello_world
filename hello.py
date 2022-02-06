@@ -5,3 +5,7 @@ d2=set(vars())
 d=d2-d1
 print('test branch:',' '.join(d))
 print('main')
+import os,sys
+print(sys.version)
+print(os.getlogin())
+

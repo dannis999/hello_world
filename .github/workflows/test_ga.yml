@@ -4,7 +4,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: ls -Al / > root.txt
-      - run: tree
-      - run: git add root.txt
-      - run: git commit -m "test"
+      - run: python3 hello.py
