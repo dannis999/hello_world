@@ -4,5 +4,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: w
-      - run: whoami
+      - run: curl http://ip.tool.chinaz.com|grep 'name="ip" url="true"'
+      - run: git config --global --list
