@@ -1,8 +1,8 @@
 on: [push]
 jobs:
-	test_job:
-		runs-on: ubuntu-latest
-		steps:
-			- run: pwd
-			- run: ls -Al
+  test_job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: pwd
+      - run: ls -Al
 
