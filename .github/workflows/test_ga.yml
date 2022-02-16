@@ -1,8 +1,16 @@
-on: [push]
+on:
+  schedule:
+    - cron: "0 * * * *"
 jobs:
   test_job:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: curl http://ip.tool.chinaz.com|grep 'name="ip" url="true"'
-      - run: git config --global --list
+      - run: |
+          curl http://ip.tool.chinaz.com|grep 'name="ip" url="true"' > ip.txt
+          git add .
+          git config user.name "dannis999"
+          git config user.email "39402843+dannis999@users.noreply.github.com"
+          git commit -m "Update IP."
+          git push
+
