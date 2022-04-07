@@ -1,1 +1,1 @@
-                        <input id="address" type="text" name="ip" url="true" value="52.160.163.164" class="search-write-cont w412 WrapHid" />
+                        <input id="address" type="text" name="ip" url="true" value="52.188.118.98" class="search-write-cont w412 WrapHid" />
